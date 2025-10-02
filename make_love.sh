@@ -47,6 +47,6 @@ function Web()
 }
 
 Love $exec;
-Linux $exec;
-Win $exec;
+#Linux $exec;
+#Win $exec;
 Web $exec;

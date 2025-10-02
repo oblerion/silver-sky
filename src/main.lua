@@ -7,6 +7,7 @@ local warframe = require "warframe"
 
 function love.load()
     warframe.load()
+   -- love.graphics.setColor(0,0.2,0.8,1)
 end
 
 function love.update(dt)
@@ -14,5 +15,6 @@ function love.update(dt)
 end
 
 function love.draw()
+    love.graphics.clear()
     warframe.draw()
 end

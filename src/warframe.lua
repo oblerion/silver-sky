@@ -1,7 +1,11 @@
-local warframe = {}
+require "warframe.title"
+
+local warframe = {
+    scenetitle= {}
+}
 
 function warframe.load()
-    print("load")
+    warframe.scenetitle = Title()
 end
 
 function warframe.update(dt)
@@ -9,7 +13,7 @@ function warframe.update(dt)
 end
 
 function warframe.draw()
-    print("draw")
+    warframe.scenetitle:draw()
 end
 
 return warframe
